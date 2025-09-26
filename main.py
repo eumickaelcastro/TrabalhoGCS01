@@ -1,4 +1,4 @@
-from calc import somar, subtrair, multiplicar, dividir, potencia
+from calc import somar, subtrair, multiplicar, dividir, potencia, raiz_quadrada
 
 def menu():
     print("=== Calculadora Simples ===")
@@ -7,6 +7,7 @@ def menu():
     print("3 - Multiplicar")
     print("4 - Dividir")
     print("5 - Potência")
+    print("6 - Raiz Quadrada")
     print("0 - Sair")
 
 while True:
@@ -30,5 +31,7 @@ while True:
         print("Resultado: ", dividir(a, b))
     elif opcao == "5":
         print("Resultado: ", potencia(a, b))
+    elif opcao == "6":
+        print("Resultado: ", raiz_quadrada(a))
     else:
         print("Opção inválida!")
