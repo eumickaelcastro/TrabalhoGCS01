@@ -14,3 +14,8 @@ def dividir(a, b):
 
 def potencia (a,b):
     return a**b
+
+def raiz_quadrada(a):
+    if a < 0:
+        return "Erro: não existe raiz real de número negativo!"
+    return a ** 0.5
