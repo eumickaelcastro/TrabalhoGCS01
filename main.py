@@ -1,4 +1,4 @@
-from calc import somar, subtrair, multiplicar, dividir
+from calc import somar, subtrair, multiplicar, dividir, potencia
 
 def menu():
     print("=== Calculadora Simples ===")
@@ -6,6 +6,7 @@ def menu():
     print("2 - Subtrair")
     print("3 - Multiplicar")
     print("4 - Dividir")
+    print("5 - Potência")
     print("0 - Sair")
 
 while True:
@@ -20,12 +21,14 @@ while True:
     b = float(input("Digite o segundo número: "))
 
     if opcao == "1":
-        print("Resultado:", somar(a, b))
+        print("Resultado: ", somar(a, b))
     elif opcao == "2":
-        print("Resultado:", subtrair(a, b))
+        print("Resultado: ", subtrair(a, b))
     elif opcao == "3":
-        print("Resultado:", multiplicar(a, b))
+        print("Resultado: ", multiplicar(a, b))
     elif opcao == "4":
-        print("Resultado:", dividir(a, b))
+        print("Resultado: ", dividir(a, b))
+    elif opcao == "5":
+        print("Resultado: ", potencia(a, b))
     else:
         print("Opção inválida!")
